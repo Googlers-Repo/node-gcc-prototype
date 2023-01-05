@@ -21,3 +21,17 @@ curl -sL https://github.com/Googlers-Repo/extra/releases/download/gcc-android-10
 ```
 
 > This script requires [Systemless Mkshrc][mkshrc] above 1.2.2. If not, some logs might be incorrectly displayed.
+
+## Install Python
+
+There are currently no native Python for this, so symlink Python from Termux
+
+As Termux user
+```shell
+pkg install python
+```
+
+As root user 
+```shell
+ln -s /data/data/com.termux/files/usr/python $PREFIX/bin/python
+```
